@@ -1,4 +1,5 @@
 import requests, json
+from urllib.error import HTTPError
 
 def getGenders(names):
 	url = ""
@@ -19,6 +20,9 @@ def getGenders(names):
 	
 	retrn = []
 	for result in results:
+		if result == "error":
+			raise ConnectionError("API request could not be carried out.\
+Free connections to genderize.io are limited to 1000 per day.")
 		if result["gender"] is not None:
 			retrn.append((result["gender"], result["probability"], result["count"]))
 		else:
