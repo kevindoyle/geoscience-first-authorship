@@ -1,5 +1,6 @@
 import requests, json
 from urllib.error import HTTPError
+import unicodedata
 
 def getGenders(names):
 	url = ""
@@ -8,6 +9,7 @@ def getGenders(names):
 		names = [names,]
 	
 	for name in names:
+		name = unicodedata.normalize('NFD', name).encode('ascii', 'ignore').decode("utf-8")
 		if url == "":
 			url = "name[0]=" + name
 		else:
