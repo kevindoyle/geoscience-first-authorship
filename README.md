@@ -58,6 +58,6 @@ The file `gender.py` is copied from [github.com/block8432/gender.py](https://git
 Please cite as
 
 ```
-Pico, T., Bierman, P., Doyle, K., Richardson, S., First authorship gender gap in the geoscience, AGU Advances, in review.
+T. Pico, P. Bierman, K. Doyle, S. Richardson, [First authorship gender gap in the geosciences](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2020EA001203), AGU Earth & Space Sciences, 2020
 ```
 
