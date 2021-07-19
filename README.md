@@ -61,3 +61,30 @@ Please cite as
 Pico, T., Bierman, P., Doyle, K., Richardson, S., First authorship gender gap in the geoscience, AGU Advances, in review.
 ```
 
+## overview of all the notebooks and scripts:
+```
+Analysis_name_authors.ipynb
+```
+
+
+Author_Database_from_ConferenceAbstracts.ipynb
+Example_gender_chinese_names.ipynb
+Parse Journal Data-EGU.ipynb
+Parse Journal Data.ipynb
+Scrape Journals Save Pages.ipynb
+analysis-Synthetics.ipynb
+analysis.ipynb
+analysis_EGU.ipynb
+compare_demographics.ipynb
+Analysis_name_authors.ipynb
+Author_Database_from_ConferenceAbstracts.ipynb
+Example_gender_chinese_names.ipynb
+Parse Journal Data-EGU.ipynb
+Parse Journal Data.ipynb
+Scrape Journals Save Pages.ipynb
+analysis-Synthetics.ipynb
+analysis.ipynb
+analysis_EGU.ipynb
+compare_demographics.ipynb
+gender.py
+read_jsondata.py
