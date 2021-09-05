@@ -29,6 +29,14 @@ def read_jsons(data_dir, columns=['journal','all_genders', 'all_percent', 'year'
     df.loc[df.journal.str.contains("Bulletin"),'journal'] = 'BSSA'
 
     df.loc[df.journal.str.contains("Seismological"),'journal'] = 'SRL'
+    
+    df.loc[df.journal.str.contains("NatureGeoscience"),'journal'] = 'NatGeo'
+    
+    df.loc[df.journal.str.contains("JGRSolidEarth"),'journal'] = 'JGR'
+    
+    df.loc[df.journal.str.contains("GEOPHYSICS"),'journal'] = 'GEOPH.'
+    
+    df.loc[df.journal.str.contains("SolidEarth"),'journal'] = 'SE'
 
     # Remove rows for papers from 2021
     df = df[~df['year'].isin(['2021'])].copy()
