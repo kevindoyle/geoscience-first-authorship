@@ -42,9 +42,9 @@ def read_jsons(data_dir, columns=['journal','all_genders', 'all_percent', 'year'
     df = df[~df['year'].isin(['2021'])].copy()
 
     # add IF
-    dict_IF = {'Nature': 46.486, 'Science': 41.845, 'NatureGeoscience': 16.103, 'EPSL': 4.823, 'GRL': 4.952, 
-        'JGRSolidEarth': 4.191, 'G3': 3.721, 'SRL': 3.131, 'Tectp': 3.048, 'SolidEarth': 2.921, 
-       'GEOPHYSICS': 3.093, 'GJI': 2.834, 'BSSA': 2.274, 'PEPI': 2.413}
+    dict_IF = {'Nature': 46.486, 'Science': 41.845, 'NatGeo': 16.103, 'EPSL': 4.823, 'GRL': 4.952, 
+        'JGR': 4.191, 'G3': 3.721, 'SRL': 3.131, 'Tectp': 3.048, 'SE': 2.921, 
+       'GEOPH.': 3.093, 'GJI': 2.834, 'BSSA': 2.274, 'PEPI': 2.413}
 
     df['IF'] = df['journal'].map(dict_IF)
     return (df)    
